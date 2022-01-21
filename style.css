@@ -5,6 +5,25 @@
     margin-right: 16px;
     font-family: arial,sans-serif;
     font-size: 13px;
+    float:right;
+}
+
+.panelNav {
+    display: flex;
+    justify-content: end;
+}
+
+.profil {
+    border-radius: 50% 50%;
+}
+
+.headerli {
+    display:inline;
+    float: left;
+}
+
+.headerli:first-child {
+    margin-bottom: 10px;
 }
 
 .headerli a {
@@ -34,6 +53,11 @@
     margin:0 auto;
     margin-top: -77px;
     width: 582px;
+    border-radius: 25px;
+}
+
+.search-area:hover {
+    box-shadow: 0 2px 3px 0 rgba(0,0,0,0.24), 0 2px 5px 0 rgba(0,0,0.19);
 }
 
 .search {
@@ -72,8 +96,9 @@
     flex:100%;
     white-space:pre;
     font: 16px arial, sans-serif;
-    line-height: 34px !important;
+    line-height: 34px ;
     display:block;    
+    height: 34px !important;
 }
 
 .input {
@@ -86,7 +111,8 @@
     flex:100%;
     margin-top: -68px;
     font: 16px arial, sans-serif;
-    line-height: 34px !important;
+    line-height: 34px;
+    height: 34px !important;
     text-rendering: auto;
     letter-spacing:normal;
     word-spacing: normal;
@@ -98,9 +124,23 @@
     cursor: text;
 }
 
+.buttons {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+
 .googlesearch {
-    margin:11px 4px;
+    margin:11px 20px 11px 4px;
     padding:0 16px;
+    border:1px solid #f2f2f2;
+    font-family: Arial;
+    color:#5f6368;
+    font-size:14px;
+    height: 36px;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;;
     line-height: 27px;
     min-width: 54px;
     text-align: center;
@@ -111,6 +151,12 @@
 .feelinglucky {
     padding:0 16px;
     line-height: 27px;
+    border:1px solid #f2f2f2;
+    font-family: Arial;
+    color:#5f6368;
+    font-size: 14px;
+    height: 36px;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
     min-width: 54px;
     text-align: center;
     cursor:pointer;
@@ -128,19 +174,21 @@
     width:100%;
     margin-left: -8px;
     line-height: 10px;
+    background-color: #f2f2f2;
 }
 
 .footerli {
     float:left;
+    list-style-type: none;
 }
 
 .footerli a {
     display:block;
     color:#70757a;
     text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
     padding:14px 16px;
     text-decoration: none;
-    font-family:14px;
     font-size: 14px;
     margin-left: 14px;
     margin-right: -20px;
